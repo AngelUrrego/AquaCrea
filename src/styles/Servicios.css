@@ -9,14 +9,13 @@
     
   }
   
-  .servicios img{
+  .imgServicios{
     width: 120px;
   }
   
   .subservcios{
     display: flex;
     gap: 150px;
-    margin-bottom: 50px;
     margin-top: 20px;
     flex-wrap: wrap;
     justify-content: center;
@@ -29,4 +28,58 @@
     justify-content: center;
     align-items: center;
     text-align: center;  
+    margin-bottom: 0;
   }
+
+  .containerWhatsapp{
+    margin-top: -120px;
+    margin-bottom: 0;
+  }
+
+  .btn-cta {
+    background-color: #25D366; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .btn-cta:hover {
+    background-color: #128C7E; 
+  }
+  
+  .imgwhatsapp {
+    margin-left: 8px;
+    width: 20px;
+  }
+  
+
+  @media (min-width: 700px) and (max-width: 900px) {
+    .subservcios {
+      gap: 20px; /* Reduce el espacio entre los elementos */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; /* Distribuye los elementos uniformemente */
+      font-size: 20px;
+    }
+  
+    .contenedor {
+      width: 100%; /* Ajusta el ancho para permitir dos elementos por fila */
+      margin-bottom: 20px;
+    }
+  
+    .imgServicios {
+      width: 100px; /* Ajusta el tamaño de la imagen para mantener el diseño adecuado */
+    }
+
+    .containerWhatsapp{
+      
+      margin-top: -10px;
+      margin-bottom: 40px;
+    }
+  }
+  
+  

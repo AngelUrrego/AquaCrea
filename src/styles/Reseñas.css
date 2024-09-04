@@ -32,3 +32,28 @@
     border-radius: 100%;
     margin-right: 20px;
   }
+
+
+  @media (min-width: 700px) and (max-width: 900px) {
+    .reseñas {
+      justify-content: space-between; /* Distribuye las reseñas uniformemente */
+      flex-wrap: wrap;
+    }
+  
+    .subreseñas {
+      width: 30%; /* Reduce el ancho para asegurarse de que quepan dos por fila */
+      margin-bottom: 20px;
+    }
+  
+    /* Elimina el margen derecho en cada segundo elemento */
+    .subreseñas:nth-child(2n) {
+      margin-right: 0;
+    }
+  
+    /* Centra las reseñas cuando hay un número impar de elementos */
+    .reseñas > .subreseñas:nth-last-child(2):nth-child(odd) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  
