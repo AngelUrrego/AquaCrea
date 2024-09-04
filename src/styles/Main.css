@@ -1,0 +1,101 @@
+.main{
+    display: flex;
+    justify-content: end;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #00204A;
+    background-color: white;
+    width: 1200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: left;
+  }
+  .main:hover{
+    transform: scale(1.03); 
+    transition: 1s;
+    cursor: pointer;
+  }
+  
+  .main h1{
+    font-weight: 900;
+    margin-left: 40px;
+    font-size: 35px;
+  }
+  
+  .main p{
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 70px;
+  }
+  
+  .piscina1{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .main img{
+    width: 400px;
+    height: 250px;
+  }
+  .contenedorPiscinas{
+    padding-top: 130px;
+  }
+
+
+  /* Media queries */
+@media (max-width: 1024px) {
+  .main {
+    width: 1000px; 
+  }
+
+  .main img {
+    width: 350px; 
+    height: 220px;
+  }
+
+  .main h1 {
+    font-size: 30px; 
+  }
+
+  .main p {
+    font-size: 16px; 
+    margin-left: 30px; 
+    margin-right: 50px;
+  }
+  .contenedorPiscinas{
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 90%; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-shadow: none; 
+  }
+
+  .main img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 20px; 
+  }
+
+  .main h1 {
+    font-size: 24px; 
+    margin-left: 0;
+  }
+
+  .main p {
+    font-size: 14px; 
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contenedorPiscinas{
+    padding-top: 150px;
+  }
+}

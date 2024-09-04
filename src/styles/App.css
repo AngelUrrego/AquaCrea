@@ -1,0 +1,132 @@
+body{
+  background-color: #F0F0F0;
+  font-family: 'Circular', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos del header o la cabecera */
+.header{
+  color: black;
+  display: flex;
+  gap: 5px;
+  background-color: white;
+  font-family: 'Circular', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  padding-bottom: 15px;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  z-index: 1000; 
+}
+.subheader{
+  display: flex;
+  gap: 80px;
+  justify-content: space-between; 
+  align-items: center;
+  margin: auto;
+  margin-left: 80px;
+}
+.subheader a {
+  text-decoration: none;
+}
+
+.links{
+  text-decoration: none;
+  color: black;
+}
+
+.linkwhatsapp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25D366;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  gap: 10px;
+  color: white;
+}
+
+.logowhatsapp a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+    position: fixed;
+    overflow-y: auto;
+    align-items: center;
+  }
+
+  .imglogo {
+    width: 150px; /* Ajusta el tamaño del logo en pantallas más pequeñas */
+  }
+
+  .subheader {
+    display: none; /* Oculta el menú en pantallas pequeñas por defecto */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    overflow-y: auto;
+    top: 150px; /* Ajusta la posición según el tamaño de tu header */
+    left: 0;
+    right: 0; /* Asegura que el menú se extienda a lo largo del contenedor */
+    margin: 0 auto; /* Centra el menú horizontalmente */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 900; /* Asegúrate de que el menú esté debajo del botón de hamburguesa */
+  }
+
+  .hamburger {
+    display: block;
+    position: relative; /* Asegúrate de que el botón esté en el flujo normal del documento */
+    z-index: 1000; /* Asegúrate de que el botón esté encima del menú */
+  }
+
+  .subheader.active {
+    display: flex;
+  }
+
+  .linkwhatsapp {
+    width: 100%; /* Ajusta el ancho del botón de WhatsApp en pantallas pequeñas */
+  }
+}
+
+
+
+
+
+/*Tamaño de logos */
+
+.imglogo{
+  margin-top: 8px;
+  margin-left: 15px;
+  width: 230px;
+}
+.imgwhatsapp{
+  width: 30px;
+} 
